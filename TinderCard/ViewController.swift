@@ -8,18 +8,10 @@
 
 import UIKit
 
-//MARK: - Mock data
-let imageNames = [
-	"lady1-a",
-  "lady1-b",
-  "lady1-c",
-  "lady1-d",
-]
-
 class ViewController: UIViewController {
 
   var cardView = Card()
-  let cardViewModel = CardViewModel()
+  lazy var cardViewModel = CardViewModel.init(name: "Hsin", textAlignment: .left)
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -38,29 +30,17 @@ extension ViewController: CardDataSource {
   func cardCurrentPhotoIndex(_ card: Card) -> Int {
     return cardViewModel.currentPhotoIndex
   }
-
-  func cardFirstPhotoImage(_ cardView: Card) -> UIImage {
-    return UIImage(named: imageNames[0])!
-  }
   
   func cardPhotos(_ cardView: Card) -> [UIImage] {
-    var images = [UIImage]()
-    //TODO: - Mock Data, it should be replaced by fetching photos from Firebase storage in the future
-    imageNames.forEach{
-      let img = UIImage(named: $0)!
-      images.append(img)
-    }
-    return images
+    return cardViewModel.images
   }
   
   func cardInformationAttributedText(_ cardView: Card) -> NSAttributedString {
-    //TODO: - Write an extension for translating String to NSAttributedString
-    let nameAtrributedString = NSAttributedString.init(string: "name", attributes: [.font : UIFont.systemFont(ofSize: 32, weight: .heavy)])
-    return nameAtrributedString
+    return cardViewModel.attributedString
   }
   
   func cardInformationTextAlignment(_ cardView: Card) -> NSTextAlignment {
-    return .left
+    return cardViewModel.textAlignment
   }
 }
 
