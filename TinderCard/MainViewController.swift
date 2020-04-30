@@ -10,7 +10,6 @@ import UIKit
 
 class MainViewController: UIViewController {
   
-  let cardDeskViewModel = CardDeskViewModel()
   let cardDeskView = CardDeskView()
   
   override func viewDidLoad() {
@@ -25,6 +24,20 @@ class MainViewController: UIViewController {
 
 extension MainViewController: CardDeskViewDataSource {
   func cardDeskViewAllCardViewModels(_ cardDeskView: CardDeskView) -> [CardViewModel] {
-    return cardDeskViewModel.mockCardViewModels
+    let photos = [
+    	UIImage(named: "lady1-a")!,
+      UIImage(named: "lady1-b")!,
+      UIImage(named: "lady1-c")!,
+      UIImage(named: "lady1-d")!,
+    ]
+    
+    let cardViewModels = [
+      CardViewModel(name: "Hsin", textAlignment: .center, photos: photos),
+      CardViewModel(name: "Hsin", textAlignment: .center, photos: photos),
+      CardViewModel(name: "Katy", textAlignment: .left, photos: photos),
+      CardViewModel(name: "Annie", textAlignment: .center, photos: photos),
+      CardViewModel(name: "Ting", textAlignment: .left, photos: photos)
+    ]
+    return cardViewModels
   }
 }

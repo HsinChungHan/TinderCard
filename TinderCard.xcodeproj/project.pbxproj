@@ -17,7 +17,6 @@
 		D1B8627924589D7600CC8C21 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B8627824589D7600CC8C21 /* CardViewModel.swift */; };
 		D1B8627B2459820F00CC8C21 /* CardDeskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B8627A2459820F00CC8C21 /* CardDeskView.swift */; };
 		D1B8627F2459942A00CC8C21 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B8627E2459942A00CC8C21 /* MainViewController.swift */; };
-		D1B862832459977200CC8C21 /* CardDeskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B862822459977200CC8C21 /* CardDeskViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		D1B8627824589D7600CC8C21 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		D1B8627A2459820F00CC8C21 /* CardDeskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeskView.swift; sourceTree = "<group>"; };
 		D1B8627E2459942A00CC8C21 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		D1B862822459977200CC8C21 /* CardDeskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeskViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +69,7 @@
 				D1B862622458968D00CC8C21 /* SceneDelegate.swift */,
 				D1B862812459975E00CC8C21 /* CardDeskView */,
 				D1B862802459975700CC8C21 /* CardView */,
-				D1B8627624589C9C00CC8C21 /* UIVIewConstraintExtension.swift */,
+				D1B86284245ADF1800CC8C21 /* Utils */,
 				D1B862692458968F00CC8C21 /* Assets.xcassets */,
 				D1B8626B2458968F00CC8C21 /* LaunchScreen.storyboard */,
 				D1B8626E2458968F00CC8C21 /* Info.plist */,
@@ -93,9 +91,16 @@
 			isa = PBXGroup;
 			children = (
 				D1B8627A2459820F00CC8C21 /* CardDeskView.swift */,
-				D1B862822459977200CC8C21 /* CardDeskViewModel.swift */,
 			);
 			path = CardDeskView;
+			sourceTree = "<group>";
+		};
+		D1B86284245ADF1800CC8C21 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D1B8627624589C9C00CC8C21 /* UIVIewConstraintExtension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +178,6 @@
 				D1B8627924589D7600CC8C21 /* CardViewModel.swift in Sources */,
 				D1B8627B2459820F00CC8C21 /* CardDeskView.swift in Sources */,
 				D1B86275245896DF00CC8C21 /* Card.swift in Sources */,
-				D1B862832459977200CC8C21 /* CardDeskViewModel.swift in Sources */,
 				D1B8627724589C9C00CC8C21 /* UIVIewConstraintExtension.swift in Sources */,
 				D1B862632458968D00CC8C21 /* SceneDelegate.swift in Sources */,
 				D1B8627F2459942A00CC8C21 /* MainViewController.swift in Sources */,

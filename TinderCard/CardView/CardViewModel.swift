@@ -19,15 +19,16 @@ let imageNames = [
 
 class CardViewModel {
   var currentPhotoIndex = 0
-  var name: String
-  var textAlignment: NSTextAlignment
+  let name: String
+  let textAlignment: NSTextAlignment
+  let photos: [UIImage]
   //TODO: - It's mock data
-  lazy var images = makePhotos(imageNames: imageNames)
   lazy var attributedString = translationStringToNSAttributedString(str: name)
   
-  init(name: String, textAlignment: NSTextAlignment) {
+  init(name: String, textAlignment: NSTextAlignment, photos: [UIImage]) {
     self.name = name
     self.textAlignment = textAlignment
+    self.photos = photos
   }
 
   func getPhotoMoveForwardIndex(currentIndex: Int, countOfPhotos: Int) -> Int {

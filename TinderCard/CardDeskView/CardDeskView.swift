@@ -12,21 +12,21 @@ protocol CardDeskViewDataSource: AnyObject {
   func cardDeskViewAllCardViewModels(_ cardDeskView: CardDeskView) -> [CardViewModel]
 }
 
-class CardDeskView: UIView {
+public class CardDeskView: UIView {
   weak var dataSource: CardDeskViewDataSource?
   
-  override init(frame: CGRect) {
+  override public init(frame: CGRect) {
     super.init(frame: .zero)
   }
   
-  required init?(coder: NSCoder) {
+  required public init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 }
 
 extension CardDeskView {
   
-  func putIntoCards() {
+  public func putIntoCards() {
     guard let dataSource = dataSource else {
       fatalError("🚨 You have to set CardDeskView's dataSource")
     }

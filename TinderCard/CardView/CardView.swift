@@ -11,9 +11,9 @@ import UIKit
 fileprivate let threhold: CGFloat = 120
 
 class CardView: UIView {
-
-  var card = Card()
-  var cardViewModel: CardViewModel
+  
+  fileprivate var card = Card()
+  fileprivate var cardViewModel: CardViewModel
   
   init(cardViewModel: CardViewModel) {
     self.cardViewModel = cardViewModel
@@ -38,7 +38,7 @@ extension CardView: CardDataSource {
   }
   
   func cardPhotos(_ cardView: Card) -> [UIImage] {
-    return cardViewModel.images
+    return cardViewModel.photos
   }
   
   func cardInformationAttributedText(_ cardView: Card) -> NSAttributedString {
