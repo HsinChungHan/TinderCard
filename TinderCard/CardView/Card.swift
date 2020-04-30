@@ -9,7 +9,6 @@
 import UIKit
 
 //MARK: - Instance
-fileprivate let threhold: CGFloat = 120
 fileprivate let barDeselectColor = UIColor.init(white: 0, alpha: 0.1)
 fileprivate let barSelectColor = UIColor.white
 
@@ -39,11 +38,11 @@ class Card: UIView {
   fileprivate lazy var barStackView = makeBarStackView()
   
   //MARK: - Initialization
+  
   override init(frame: CGRect) {
     super.init(frame: .zero)
     setupLayout()
     layer.addSublayer(gradientLayer)
-    addPanGesture()
     addTapGesture()
   }
   
@@ -51,9 +50,6 @@ class Card: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 }
-
-
-
 
 
 extension Card {
@@ -98,74 +94,6 @@ extension Card {
     }
     return views
   }
-  
-  
-  //MARK: - Pan Gesture
-  fileprivate func addPanGesture() {
-    let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
-    addGestureRecognizer(panGesture)
-  }
-  
-  @objc func handlePan(gesture: UIPanGestureRecognizer){
-    switch gesture.state {
-      case .began:
-        superview?.subviews.forEach({ (subview) in
-          subview.layer.removeAllAnimations()
-        })
-      case .changed:
-        handleChanged(gesture)
-      case .ended:
-        handleEnded(gesture)
-      default:
-        return
-    }
-  }
-  
-  fileprivate func handleChanged(_ gesture: UIPanGestureRecognizer) {
-    let translation = gesture.translation(in: nil)
-    //convert degrees into radians
-    let degrees: CGFloat = translation.x / 20
-    let angle: CGFloat = degrees * .pi / 180
-    let rotationTransformation = CGAffineTransform.init(rotationAngle: angle)
-    transform = rotationTransformation.translatedBy(x: translation.x, y: translation.y)
-  }
-  
-  fileprivate func handleEnded(_ gesture: UIPanGestureRecognizer) {
-    let translationDirection: CGFloat = gesture.translation(in: nil).x > 0 ? 1 : -1
-    let shouldDismissedCard = abs(gesture.translation(in: nil).x) > threhold
-    if shouldDismissedCard{
-      if translationDirection == 1{
-        performSwipAnimation(translation: 700, angle: 15)
-      }else{
-        performSwipAnimation(translation: -700, angle: -15)
-      }
-    }else{
-      UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.1, options: .curveEaseOut, animations: {[unowned self] in
-        self.transform = .identity
-      })
-    }
-  }
-  
-  fileprivate func performSwipAnimation(translation: CGFloat, angle: CGFloat) {
-    let translationAnimation = CABasicAnimation.init(keyPath: "position.x")
-    translationAnimation.toValue = translation
-    translationAnimation.duration = 0.5
-    translationAnimation.fillMode = .forwards
-    translationAnimation.isRemovedOnCompletion = false
-    translationAnimation.timingFunction = CAMediaTimingFunction.init(name: .easeInEaseOut)
-    
-    let rotationAnimation = CABasicAnimation.init(keyPath: "transform.rotation.z")
-    rotationAnimation.toValue = angle * CGFloat.pi / 180
-    rotationAnimation.duration = 0.5
-    CATransaction.setCompletionBlock {
-      self.removeFromSuperview()
-    }
-    
-    self.layer.add(translationAnimation, forKey: "translation")
-    self.layer.add(rotationAnimation, forKey: "rotation")
-    CATransaction.commit()
-  }
-  
   
   //MARK: - Tap Gesture
   fileprivate func addTapGesture(){
