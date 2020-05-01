@@ -1,11 +1,12 @@
 //
-//  UIVIewConstraintExtension.swift
+//  UIViewConstraintsExtension.swift
 //  TinderCard
 //
-//  Created by Chung Han Hsin on 2020/4/29.
+//  Created by Chung Han Hsin on 2020/4/30.
 //  Copyright © 2020 Chung Han Hsin. All rights reserved.
 //
 
+import Foundation
 import UIKit
 struct AnchoredConstraints {
   var top, bottom, leading, trailing, width, height: NSLayoutConstraint?

@@ -3,34 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D12BA695245AE4990093F151 /* UIViewConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BA694245AE4990093F151 /* UIViewConstraintsExtension.swift */; };
+		D12BA69E245B08900093F151 /* TinderSlidedCard in Frameworks */ = {isa = PBXBuildFile; productRef = D12BA69D245B08900093F151 /* TinderSlidedCard */; };
+		D12BA6A0245B12DA0093F151 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BA69F245B12DA0093F151 /* MainViewModel.swift */; };
 		D1B862612458968D00CC8C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B862602458968D00CC8C21 /* AppDelegate.swift */; };
 		D1B862632458968D00CC8C21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B862622458968D00CC8C21 /* SceneDelegate.swift */; };
-		D1B862652458968D00CC8C21 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B862642458968D00CC8C21 /* CardView.swift */; };
 		D1B8626A2458968F00CC8C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B862692458968F00CC8C21 /* Assets.xcassets */; };
 		D1B8626D2458968F00CC8C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B8626B2458968F00CC8C21 /* LaunchScreen.storyboard */; };
-		D1B86275245896DF00CC8C21 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B86274245896DF00CC8C21 /* Card.swift */; };
-		D1B8627724589C9C00CC8C21 /* UIVIewConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B8627624589C9C00CC8C21 /* UIVIewConstraintExtension.swift */; };
-		D1B8627924589D7600CC8C21 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B8627824589D7600CC8C21 /* CardViewModel.swift */; };
-		D1B8627B2459820F00CC8C21 /* CardDeskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B8627A2459820F00CC8C21 /* CardDeskView.swift */; };
 		D1B8627F2459942A00CC8C21 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B8627E2459942A00CC8C21 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D12BA694245AE4990093F151 /* UIViewConstraintsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewConstraintsExtension.swift; sourceTree = "<group>"; };
+		D12BA69F245B12DA0093F151 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		D1B8625D2458968D00CC8C21 /* TinderCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B862602458968D00CC8C21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1B862622458968D00CC8C21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D1B862642458968D00CC8C21 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D1B862692458968F00CC8C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1B8626C2458968F00CC8C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1B8626E2458968F00CC8C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1B86274245896DF00CC8C21 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		D1B8627624589C9C00CC8C21 /* UIVIewConstraintExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewConstraintExtension.swift; sourceTree = "<group>"; };
-		D1B8627824589D7600CC8C21 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
-		D1B8627A2459820F00CC8C21 /* CardDeskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeskView.swift; sourceTree = "<group>"; };
 		D1B8627E2459942A00CC8C21 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12BA69E245B08900093F151 /* TinderSlidedCard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +46,7 @@
 			children = (
 				D1B8625F2458968D00CC8C21 /* TinderCard */,
 				D1B8625E2458968D00CC8C21 /* Products */,
+				D1B86286245AE06600CC8C21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,10 +63,9 @@
 			children = (
 				D1B862602458968D00CC8C21 /* AppDelegate.swift */,
 				D1B8627E2459942A00CC8C21 /* MainViewController.swift */,
+				D12BA69F245B12DA0093F151 /* MainViewModel.swift */,
 				D1B862622458968D00CC8C21 /* SceneDelegate.swift */,
-				D1B862812459975E00CC8C21 /* CardDeskView */,
-				D1B862802459975700CC8C21 /* CardView */,
-				D1B86284245ADF1800CC8C21 /* Utils */,
+				D12BA694245AE4990093F151 /* UIViewConstraintsExtension.swift */,
 				D1B862692458968F00CC8C21 /* Assets.xcassets */,
 				D1B8626B2458968F00CC8C21 /* LaunchScreen.storyboard */,
 				D1B8626E2458968F00CC8C21 /* Info.plist */,
@@ -77,30 +73,11 @@
 			path = TinderCard;
 			sourceTree = "<group>";
 		};
-		D1B862802459975700CC8C21 /* CardView */ = {
+		D1B86286245AE06600CC8C21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D1B862642458968D00CC8C21 /* CardView.swift */,
-				D1B86274245896DF00CC8C21 /* Card.swift */,
-				D1B8627824589D7600CC8C21 /* CardViewModel.swift */,
 			);
-			path = CardView;
-			sourceTree = "<group>";
-		};
-		D1B862812459975E00CC8C21 /* CardDeskView */ = {
-			isa = PBXGroup;
-			children = (
-				D1B8627A2459820F00CC8C21 /* CardDeskView.swift */,
-			);
-			path = CardDeskView;
-			sourceTree = "<group>";
-		};
-		D1B86284245ADF1800CC8C21 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				D1B8627624589C9C00CC8C21 /* UIVIewConstraintExtension.swift */,
-			);
-			path = Utils;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +96,9 @@
 			dependencies = (
 			);
 			name = TinderCard;
+			packageProductDependencies = (
+				D12BA69D245B08900093F151 /* TinderSlidedCard */,
+			);
 			productName = TinderCard;
 			productReference = D1B8625D2458968D00CC8C21 /* TinderCard.app */;
 			productType = "com.apple.product-type.application";
@@ -147,6 +127,9 @@
 				Base,
 			);
 			mainGroup = D1B862542458968D00CC8C21;
+			packageReferences = (
+				D12BA69C245B08900093F151 /* XCRemoteSwiftPackageReference "TinderSlidedCard" */,
+			);
 			productRefGroup = D1B8625E2458968D00CC8C21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -173,13 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1B862652458968D00CC8C21 /* CardView.swift in Sources */,
+				D12BA6A0245B12DA0093F151 /* MainViewModel.swift in Sources */,
 				D1B862612458968D00CC8C21 /* AppDelegate.swift in Sources */,
-				D1B8627924589D7600CC8C21 /* CardViewModel.swift in Sources */,
-				D1B8627B2459820F00CC8C21 /* CardDeskView.swift in Sources */,
-				D1B86275245896DF00CC8C21 /* Card.swift in Sources */,
-				D1B8627724589C9C00CC8C21 /* UIVIewConstraintExtension.swift in Sources */,
 				D1B862632458968D00CC8C21 /* SceneDelegate.swift in Sources */,
+				D12BA695245AE4990093F151 /* UIViewConstraintsExtension.swift in Sources */,
 				D1B8627F2459942A00CC8C21 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -302,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -319,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WAGW44Z6JC;
 				INFOPLIST_FILE = TinderCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WAGW44Z6JC;
 				INFOPLIST_FILE = TinderCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D12BA69C245B08900093F151 /* XCRemoteSwiftPackageReference "TinderSlidedCard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HsinChungHan/TinderSlidedCard.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D12BA69D245B08900093F151 /* TinderSlidedCard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D12BA69C245B08900093F151 /* XCRemoteSwiftPackageReference "TinderSlidedCard" */;
+			productName = TinderSlidedCard;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D1B862552458968D00CC8C21 /* Project object */;
 }
