@@ -10,6 +10,8 @@
 		D12BA695245AE4990093F151 /* UIViewConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BA694245AE4990093F151 /* UIViewConstraintsExtension.swift */; };
 		D12BA69E245B08900093F151 /* TinderSlidedCard in Frameworks */ = {isa = PBXBuildFile; productRef = D12BA69D245B08900093F151 /* TinderSlidedCard */; };
 		D12BA6A0245B12DA0093F151 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BA69F245B12DA0093F151 /* MainViewModel.swift */; };
+		D12BA6A2245C3B660093F151 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12BA6A1245C3B660093F151 /* UserDetailViewController.swift */; };
+		D12BA6B6245FFEF30093F151 /* SwipeViewController in Frameworks */ = {isa = PBXBuildFile; productRef = D12BA6B5245FFEF30093F151 /* SwipeViewController */; };
 		D1B862612458968D00CC8C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B862602458968D00CC8C21 /* AppDelegate.swift */; };
 		D1B862632458968D00CC8C21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B862622458968D00CC8C21 /* SceneDelegate.swift */; };
 		D1B8626A2458968F00CC8C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B862692458968F00CC8C21 /* Assets.xcassets */; };
@@ -20,6 +22,7 @@
 /* Begin PBXFileReference section */
 		D12BA694245AE4990093F151 /* UIViewConstraintsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewConstraintsExtension.swift; sourceTree = "<group>"; };
 		D12BA69F245B12DA0093F151 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		D12BA6A1245C3B660093F151 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		D1B8625D2458968D00CC8C21 /* TinderCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B862602458968D00CC8C21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1B862622458968D00CC8C21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12BA6B6245FFEF30093F151 /* SwipeViewController in Frameworks */,
 				D12BA69E245B08900093F151 /* TinderSlidedCard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +70,7 @@
 				D12BA69F245B12DA0093F151 /* MainViewModel.swift */,
 				D1B862622458968D00CC8C21 /* SceneDelegate.swift */,
 				D12BA694245AE4990093F151 /* UIViewConstraintsExtension.swift */,
+				D12BA6A1245C3B660093F151 /* UserDetailViewController.swift */,
 				D1B862692458968F00CC8C21 /* Assets.xcassets */,
 				D1B8626B2458968F00CC8C21 /* LaunchScreen.storyboard */,
 				D1B8626E2458968F00CC8C21 /* Info.plist */,
@@ -98,6 +103,7 @@
 			name = TinderCard;
 			packageProductDependencies = (
 				D12BA69D245B08900093F151 /* TinderSlidedCard */,
+				D12BA6B5245FFEF30093F151 /* SwipeViewController */,
 			);
 			productName = TinderCard;
 			productReference = D1B8625D2458968D00CC8C21 /* TinderCard.app */;
@@ -129,6 +135,7 @@
 			mainGroup = D1B862542458968D00CC8C21;
 			packageReferences = (
 				D12BA69C245B08900093F151 /* XCRemoteSwiftPackageReference "TinderSlidedCard" */,
+				D12BA6B4245FFEF30093F151 /* XCRemoteSwiftPackageReference "SwipeViewContoller" */,
 			);
 			productRefGroup = D1B8625E2458968D00CC8C21 /* Products */;
 			projectDirPath = "";
@@ -158,6 +165,7 @@
 			files = (
 				D12BA6A0245B12DA0093F151 /* MainViewModel.swift in Sources */,
 				D1B862612458968D00CC8C21 /* AppDelegate.swift in Sources */,
+				D12BA6A2245C3B660093F151 /* UserDetailViewController.swift in Sources */,
 				D1B862632458968D00CC8C21 /* SceneDelegate.swift in Sources */,
 				D12BA695245AE4990093F151 /* UIViewConstraintsExtension.swift in Sources */,
 				D1B8627F2459942A00CC8C21 /* MainViewController.swift in Sources */,
@@ -362,6 +370,14 @@
 				minimumVersion = 1.2.1;
 			};
 		};
+		D12BA6B4245FFEF30093F151 /* XCRemoteSwiftPackageReference "SwipeViewContoller" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HsinChungHan/SwipeViewContoller.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -369,6 +385,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D12BA69C245B08900093F151 /* XCRemoteSwiftPackageReference "TinderSlidedCard" */;
 			productName = TinderSlidedCard;
+		};
+		D12BA6B5245FFEF30093F151 /* SwipeViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D12BA6B4245FFEF30093F151 /* XCRemoteSwiftPackageReference "SwipeViewContoller" */;
+			productName = SwipeViewController;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

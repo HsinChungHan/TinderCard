@@ -8,6 +8,7 @@
 
 import UIKit
 import TinderSlidedCard
+import SwipeViewController
 
 class MainViewController: UIViewController {
   fileprivate lazy var likeButton = makeLikeButton()
@@ -40,6 +41,7 @@ class MainViewController: UIViewController {
   }
 }
 
+//MARK: - CardDeskViewDataSource
 extension MainViewController: CardDeskViewDataSource {
   func cardDeskViewDetailIcon(_ cardDeskView: CardDeskView) -> UIImage {
     return MainViewModel.makeDetailIcon()
@@ -58,9 +60,14 @@ extension MainViewController: CardDeskViewDataSource {
   }
 }
 
+//MARK: - CardDeskViewDelegate
 extension MainViewController: CardDeskViewDelegate {
+  
   func cardDeskViewDidDetailButtonPress(_ cardDeskView: CardDeskView, cardViewModel: CardViewModel, sender: UIButton) {
     print("User did press \(cardViewModel.name)'s detail button")
+    let detailVC = SwipeViewController(viewControllers: MainViewModel.makeOverallControllers())
+    detailVC.dataSource = self
+    self.present(detailVC, animated: true, completion: nil)
   }
   
   func cardDeskViewDidSlide(_ cardDeskView: CardDeskView, cardViewModel: CardViewModel) {
@@ -88,8 +95,7 @@ extension MainViewController: CardDeskViewDelegate {
   }
 }
 
-
-
+//MARK: - Lazy initialization
 extension MainViewController {
   fileprivate func makeLikeButton() -> UIButton {
     let btn = UIButton(type: .system)
@@ -130,5 +136,15 @@ extension MainViewController {
   @objc func didDislikeButtonPress(sender: UIButton) {
     cardDeskView.dislikeCurrentCard()
   }
+}
+
+//MARK: - SwipeViewControllerDataSource
+extension MainViewController: SwipeViewControllerDataSource {
+  func swipeViewControllerIsAutoScrolling(_ swipeViewController: SwipeViewController) -> Bool {
+    return true
+  }
   
+  func swipeViewControllerTimeIntervalOfAutoScrolling(_ swipeViewController: SwipeViewController) -> TimeInterval {
+    return 2
+  }
 }

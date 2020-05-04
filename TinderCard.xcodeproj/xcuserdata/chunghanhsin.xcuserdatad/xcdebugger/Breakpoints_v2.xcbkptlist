@@ -3,4 +3,118 @@
    uuid = "33DE4964-47DC-4402-87AC-E2028F1A6D64"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "631A5E0C-717C-4CEC-AEB1-BF98FDE6F574"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TinderCard/SwipingPhotosController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "pageViewController(_:viewControllerBefore:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D626F6C-67A4-4B22-AB98-95D18C99B7A9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TinderCard/SwipingPhotosController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "pageViewController(_:viewControllerAfter:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5669A592-22B0-4110-94B1-5ABF62976810"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Library/Developer/Xcode/DerivedData/TinderCard-dhlsatyuzoxazhctjryrriiwbvyt/SourcePackages/checkouts/SwipeViewContoller/Sources/SwipeViewController/SwipeViewController/TapController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "TapController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD2DC92A-E572-4A80-B74E-DB77D7C90D97"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Library/Developer/Xcode/DerivedData/TinderCard-dhlsatyuzoxazhctjryrriiwbvyt/SourcePackages/checkouts/SwipeViewContoller/Sources/SwipeViewController/SwipeViewController/SwipeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "SwipeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "FD2DC92A-E572-4A80-B74E-DB77D7C90D97 - c864c6010b445cde"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwipeViewController.SwipeViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SwipeViewController.SwipeViewController&gt;"
+                  moduleName = "TinderCard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chunghanhsin/Library/Developer/Xcode/DerivedData/TinderCard-dhlsatyuzoxazhctjryrriiwbvyt/SourcePackages/checkouts/SwipeViewContoller/Sources/SwipeViewController/SwipeViewController/SwipeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "FD2DC92A-E572-4A80-B74E-DB77D7C90D97 - da8342e55dcf47cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwipeViewController.SwipeViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SwipeViewController.SwipeViewController&gt;"
+                  moduleName = "TinderCard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chunghanhsin/Library/Developer/Xcode/DerivedData/TinderCard-dhlsatyuzoxazhctjryrriiwbvyt/SourcePackages/checkouts/SwipeViewContoller/Sources/SwipeViewController/SwipeViewController/SwipeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "98">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E5D03C9-2BDF-4498-8A4A-3604C3A4E8D8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Library/Developer/Xcode/DerivedData/TinderCard-dhlsatyuzoxazhctjryrriiwbvyt/SourcePackages/checkouts/SwipeViewContoller/Sources/SwipeViewController/SwipeViewController/SwipeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "pageViewController(_:viewControllerBefore:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

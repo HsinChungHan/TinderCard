@@ -59,4 +59,15 @@ class MainViewModel {
   static func makeDetailIcon() -> UIImage {
     return UIImage(named: "info_icon")!
   }
+  
+  static func makeOverallControllers() -> [UIViewController] {
+    var overallVC = [UIViewController]()
+    let colors: [UIColor] = [.blue, .brown, .cyan, .darkGray]
+    colors.forEach {
+      let vc = UIViewController()
+      vc.view.backgroundColor = $0
+      overallVC.append(vc)
+    }
+    return overallVC
+  }
 }
