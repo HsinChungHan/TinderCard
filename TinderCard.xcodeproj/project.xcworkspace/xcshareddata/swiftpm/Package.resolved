@@ -5,9 +5,9 @@
         "package": "SwipeViewController",
         "repositoryURL": "https://github.com/HsinChungHan/SwipeViewContoller.git",
         "state": {
-          "branch": null,
-          "revision": "e01b4b89bced9c13649127e0e731baece7a19ede",
-          "version": "1.2.0"
+          "branch": "bugFix/hsin/timer_invalidate",
+          "revision": "d560cc2c2ca861cfa15d8ea35ae15c6667009445",
+          "version": null
         }
       },
       {

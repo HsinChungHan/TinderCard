@@ -65,9 +65,10 @@ extension MainViewController: CardDeskViewDelegate {
   
   func cardDeskViewDidDetailButtonPress(_ cardDeskView: CardDeskView, cardViewModel: CardViewModel, sender: UIButton) {
     print("User did press \(cardViewModel.name)'s detail button")
-    let detailVC = SwipeViewController(viewControllers: MainViewModel.makeOverallControllers())
+    let detailVC =  makeDetailViewContoller(viewModel: cardViewModel)
     detailVC.dataSource = self
-    self.present(detailVC, animated: true, completion: nil)
+    detailVC.modalPresentationStyle = .fullScreen
+    present(detailVC, animated: true, completion: nil)
   }
   
   func cardDeskViewDidSlide(_ cardDeskView: CardDeskView, cardViewModel: CardViewModel) {
@@ -136,15 +137,34 @@ extension MainViewController {
   @objc func didDislikeButtonPress(sender: UIButton) {
     cardDeskView.dislikeCurrentCard()
   }
+  
+  fileprivate func makeDetailViewContoller(viewModel: CardViewModel) -> UserDetailViewController {
+    let vc = UserDetailViewController()
+    vc.dataSource = self
+    return vc
+  }
 }
 
-//MARK: - SwipeViewControllerDataSource
-extension MainViewController: SwipeViewControllerDataSource {
-  func swipeViewControllerIsAutoScrolling(_ swipeViewController: SwipeViewController) -> Bool {
-    return true
+extension MainViewController: UserDetailViewControllerDataSource {
+  func userDetailViewControllerCellsClass(_ userDetailVC: UserDetailViewController) -> [AnyClass] {
+    return [UITableViewCell.self]
   }
   
-  func swipeViewControllerTimeIntervalOfAutoScrolling(_ swipeViewController: SwipeViewController) -> TimeInterval {
-    return 2
+  func userDetailViewControllerNumberOfCell(_ userDetailVC: UserDetailViewController) -> Int {
+    return 1
+  }
+  
+  func userDetailViewControllerTableViewBackgroundViewHeight(_ userDetailVC: UserDetailViewController) -> CGFloat {
+    return UIScreen.main.bounds.height / 2
+  }
+  
+  func userDetailViewControllerTableViewUserImages(_ userDetailVC: UserDetailViewController) -> [UIImage] {
+    let photos1 = [
+      UIImage(named: "lady1-a")!,
+      UIImage(named: "lady1-b")!,
+      UIImage(named: "lady1-c")!,
+      UIImage(named: "lady1-d")!,
+    ]
+    return photos1
   }
 }
